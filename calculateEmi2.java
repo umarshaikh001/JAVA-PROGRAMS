@@ -3,7 +3,7 @@ import java.util.*;
 public class calculateEmi2 {
 
     public static void main (String args[]){
-        Scanner sc = new Scanner(System.in)
+        Scanner sc = new Scanner(System.in);
         Double principal,Rate,Time;
 
         Principal = Double.parseDouble(args[0]);
