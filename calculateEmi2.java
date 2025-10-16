@@ -6,16 +6,16 @@ public class calculateEmi2 {
         Scanner sc = new Scanner(System.in);
         Double principal,Rate,Time;
 
-        Principal = Double.parseDouble(args[0]);
+        principal = Double.parseDouble(args[0]);
         System.out.println("Enter the Rate");
 
-        Rate = sc.nextFloat();
-        Time = 5;
+        Rate = sc.nextDouble();
+        Time = sc.nextDouble();
 
         Rate = Rate/12*100;
         Time = Time * 100;
 
-        double Emi = (Principal*Rate*Math.pow(1 + Rate, Time ))/ (Math.pow(1+Rate,Time)-1);
+        double Emi = (principal*Rate*Math.pow(1 + Rate, Time ))/ (Math.pow(1+Rate,Time)-1);
         System.out.println("Emi is in Rs ="+ Emi + "\n");
     }
 
